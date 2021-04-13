@@ -123,11 +123,10 @@ end;
 
 procedure TForm1.DNS1Click(Sender: TObject);
 begin
-    form1.WindowState:=wsnormal;
- if not form1.visible then begin
-    form1.Visible:=true;
 
- end;
+ if not form1.visible then
+    form1.Visible:=true;
+ form1.WindowState:=wsnormal;    
 end;
 
 procedure TForm1.SpeedButton1Click(Sender: TObject);
